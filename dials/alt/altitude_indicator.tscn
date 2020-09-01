@@ -1,0 +1,30 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://dials/alt/05_lo.png" type="Texture" id=1]
+[ext_resource path="res://dials/alt/01_lo.png" type="Texture" id=2]
+[ext_resource path="res://dials/alt/02_lo.png" type="Texture" id=3]
+[ext_resource path="res://dials/alt/00_lo.png" type="Texture" id=4]
+[ext_resource path="res://dials/alt/03_lo.png" type="Texture" id=5]
+[ext_resource path="res://dials/alt/04_lo.png" type="Texture" id=6]
+[ext_resource path="res://dials/alt/altitude_indicator.gd" type="Script" id=7]
+
+[node name="altitude_indicator" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="pressure" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+
+[node name="face" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="needle10000" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+
+[node name="needle1000" type="Sprite" parent="."]
+texture = ExtResource( 5 )
+
+[node name="needle100" type="Sprite" parent="."]
+texture = ExtResource( 6 )
+
+[node name="case" type="Sprite" parent="."]
+texture = ExtResource( 1 )
